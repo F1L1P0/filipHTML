@@ -1,0 +1,148 @@
+*{
+	font-family: Helvetica;
+	font-size: 15px
+
+}
+
+.container, nav, footer{
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	display: block;	
+}
+
+
+ nav .login{
+ 	float: right;
+ 	clear: both;
+
+ }
+
+.logo{
+	width: 120px;
+}
+
+input[type=text],input[type=password]{
+	border-radius: 8px;
+	width: 140px;
+	padding: 7px;
+}
+
+input[type=submit], #quiz-button button{
+	background-color: #3399db;
+	color: white;
+	border-radius: 8px;
+	padding: 7px 20px;
+	border: 3px solid #3399db;
+}
+
+input[type=submit]:hover, #quiz-button button:hover{
+	background-color: white;
+	color: #3399db;
+
+}
+
+footer{
+	padding: 7px;
+	background-color: lightblue;
+	color: grey;
+	width: 100%;
+	position: fixed;
+	bottom: 0;	
+
+
+}
+
+nav ul{
+	background-color: #0ca4e7;
+	color: white;
+	padding: 0;
+	position: relative;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px 17px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+
+nav ul li:hover{
+	background: #055d84;
+
+}
+
+.trial{
+	float: right;
+	margin: auto;
+	padding: 5px;
+	background: #6bbf36;
+	border-radius: 7px;
+	position: absolute;
+	top: 50%;
+	right: 10px;	
+	transform: translateY(-50%);
+}
+
+h1{
+	color: #3399db;
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 1150px;
+	width: 100%;
+	display: block;	
+}
+
+.hide{
+	display: none;
+}
+
+.slider{
+	position: relative;
+}
+
+.pag{
+	position: absolute;
+	top: 10px;
+	right: 7px;
+}
+
+.pag span{
+	margin: 2px;
+	cursor: pointer;
+	background-color: white;
+	padding: 3px;
+
+}
+
+
+.pag span:hover{
+	background-color: grey;
+	
+}
+
+#quiz{
+	background-color: #f2f2f2;
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	border-radius: 20px;
+	width: 46%;
+	margin: 1%;
+	padding: 1%;
+}
+
+#quiz-button {
+	text-align: center;
+}
+
+
+.question{
+	display: inline;
+	margin: 2px;
+}

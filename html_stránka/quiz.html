@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">	
+		<link rel="stylesheet" href="mypage.css">
+		<title>SBTI</title>
+	</head>
+
+
+	<body>
+	<div class="container">
+		<nav>
+			<a href="mypage.html">
+				<img src="logo.png" alt="obrazek" class="logo">
+			</a>
+			<form action="#" method="post" class="login">
+				<input type="text" placeholder="login">
+				<input type="password" placeholder="password" >
+				<input type="text" placeholder="school">
+				<input type="submit" value="Přihlásít" onclick="void(0);">
+			</form>
+
+			<ul>
+				<li><a href="#">Aktuality</a></li>
+				<li><a href="#">Funkce</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Reference</a></li>
+				<li><a href="#">Ceník</a></li>
+				<li><a href="#">GDPR</a></li>
+				<li><a href="#">quiz</a></li>
+				<li class="trial"><a href="#">FREEEEEEE</a></li>
+			</ul>
+
+		</nav>
+
+		<div class="content">
+			<h1>
+				Kvíz
+			</h1>
+
+			<div id="quiz">
+					<p>Jak se jmenuje autor stránky jménem?
+						<select class="question" name="jmeno" id="jmeno">
+							<option id="Filip" value="Filip">Filip</option>
+							<option id="Risa" value="Risa">Ríša</option>
+							<option id="Kocik" value="Kocik">Kocik</option>
+						</select>
+						</p>
+					<p>Jaké národnosti je autor?
+						<select class="question" name="puvod" id="puvod">
+							<option value="CZ">CZ</option>
+							<option value="GE">GE</option>
+							<option value="SVK">SVK</option>
+						</select>
+					</p>
+					<p>Ve které vesnici bydlí autor stránky?
+					<input type="text" name="Rakvice" id="answer3"> </p><br>
+					<p id="quiz-button">
+					<button  onclick="check();">Zkontrolovat</button>
+					</p>
+			</div>
+		
+		</div>
+
+		<footer>
+			Copyright © 2420 Filda FrontEnd Company, všechna práva vyhlazena
+		</footer>
+	</div>
+	<script src="javascript.js"></script>
+	</body>
+
+</html>
