@@ -80,17 +80,11 @@ nav ul li:hover{
 }
 
 .trial{
-	float: right;
-	margin: auto;
 	padding: 5px;
 	background: #6bbf36;
-	border-radius: 7px;
-	position: absolute;
-	top: 50%;
-	right: 10px;	
-	transform: translateY(-50%);
+	border-radius: 0px;
+	position: relative;
 }
-
 h1{
 	color: #3399db;
 }
@@ -201,6 +195,17 @@ input #menu {
 	}
 	.collapse-menu-panel li{
 		display: inline-block;
+	}
+
+
+	.trial{
+		padding: 5px;
+		background: #6bbf36;
+		position: absolute;
+		border-radius: 7px;
+		top: 50%;
+		right: 10px;	
+		transform: translateY(-50%);
 	}
 }
 
