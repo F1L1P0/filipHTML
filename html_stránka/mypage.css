@@ -1,7 +1,5 @@
 *{
 	font-family: Helvetica;
-	font-size: 15px
-
 }
 
 .container, nav, footer{
@@ -13,10 +11,16 @@
 
 
  nav .login{
- 	float: right;
- 	clear: both;
 
+    display: inline-block;
+    float:  right;
+ 	text-align: center;
+ 	margin: 10px 0;
  }
+
+.login div{
+    display: inline-block;
+}
 
 .logo{
 	width: 120px;
@@ -104,6 +108,7 @@ h1{
 
 .slider{
 	position: relative;
+	max-width: 100%;
 }
 
 .pag{
@@ -128,13 +133,12 @@ h1{
 
 #quiz{
 	background-color: #f2f2f2;
-	border-style: solid;
-	border-width: 2px;
-	border-color: grey;
-	border-radius: 20px;
+	border-radius: 7px;
 	width: 46%;
-	margin: 1%;
+	margin: auto;
 	padding: 1%;
+    box-shadow: 3px 2px 12px 0px #0000009e;
+
 }
 
 #quiz-button {
@@ -145,4 +149,88 @@ h1{
 .question{
 	display: inline;
 	margin: 2px;
+}
+
+.panel{
+	display: inline-block;
+	width: 100%;
+}
+
+
+.collapse-menu-panel{
+	padding: 0;
+	display: block;
+	width: 100%;
+}
+
+.collapse-menu-panel li{
+	display: block;
+}
+
+#menu{
+	display: none;
+}
+
+input #menu {
+    display: block;
+    cursor: pointer;
+    padding: 10px 0 10px 50px;
+}
+
+.boxik{
+	padding: 8px;
+
+}
+
+.collaps{
+	display: none;
+}
+
+
+#menu:checked ~ .collaps {
+    display: block;
+}
+
+@media only screen and (min-width: 720px)
+{
+	#boxik, .boxik{
+		display: none !important;
+	}
+	.collaps{
+		display: block;
+	}
+	.collapse-menu-panel li{
+		display: inline-block;
+	}
+}
+
+.images{
+	overflow: hidden;
+
+}
+
+.logo-cont{	
+    display: inline-block;
+    margin: 10px 0;
+
+}
+
+.rozvrh{
+	background-color: azure;
+	border-style: solid;
+	border-color: grey;
+	border-radius: 9px;
+	margin: 10px;
+	padding: 10px;
+
+}
+
+#kviz{
+	border-bottom-style: solid;
+	border-bottom-color: #9a9a9a;
+	text-align: center;
+}
+
+#quiz button:hover{
+	cursor: pointer;
 }
