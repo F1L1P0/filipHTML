@@ -239,3 +239,21 @@ input #menu {
 #quiz button:hover{
 	cursor: pointer;
 }
+
+.ans{
+	color: blue;
+}
+
+table {
+	width: 100%;
+}
+
+table tr td{
+	text-align: center;
+	height: 70px;
+	width: 50px;
+	border-bottom-style: solid;
+	border-bottom-color: #f2f2f2;
+	border-right-style: solid;
+	border-right-color: #f2f2f2;
+}

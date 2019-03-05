@@ -4,12 +4,48 @@ function slider_event(index)
 	for (var i = 0; i < children.length; i++) {
 		children[i].classList.add('hide');
 	}
-
 	document.getElementById("png"+index).classList.remove('hide');
 
 }
 
-// 
+function removeChildren(id){
+	var list = document.getElementById(id);
+	while (list.hasChildNodes()) {   
+  		list.removeChild(list.childNodes[0]);
+	}
+}
+
+function del(id) {
+	var el = document.getElementById(id);
+	el.parentNode.removeChild(el);
+}
+
+
+function add(id, name,cl, value ){
+	//var parrent = document.getElementById(id);
+	//parrent.innerHTML += "<"+name+"> "+value+" </"+name+">"
+
+	var new_el = document.createElement(name);
+	new_el.innerText = value ;
+	document.getElementById(id).appendChild(new_el);
+	new_el.classList.add(cl);
+
+}
+
+function redirect(kam){
+
+}
+
+function show_answers(){
+		del("jmeno");
+		del("puvod");
+		del("answer3");
+		add("p1", "span", 'ans', "Filip");
+		add("p2", "span", 'ans', "CZ");
+		add("p3", "span", 'ans', "Rakvice");
+}
+
+
 window.onload = function ()
 {
 	
@@ -48,3 +84,4 @@ function check()
 
 	alert("Odpověděl jsi na " +i+ " správně");
 }
+

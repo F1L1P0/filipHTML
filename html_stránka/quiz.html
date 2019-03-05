@@ -49,24 +49,25 @@
 			<h1 id="kviz">
 				Kvíz
 			</h1>
-					<p>Jak se jmenuje autor stránky jménem?
+					<p id="p1">Jak se jmenuje autor stránky jménem?
 						<select class="question" name="jmeno" id="jmeno">
 							<option id="Filip" value="Filip">Filip</option>
 							<option id="Risa" value="Risa">Ríša</option>
 							<option id="Kocik" value="Kocik">Kocik</option>
 						</select>
 						</p>
-					<p>Jaké národnosti je autor?
+					<p id="p2">Jaké národnosti je autor?
 						<select class="question" name="puvod" id="puvod">
-							<option value="CZ">CZ</option>
-							<option value="GE">GE</option>
 							<option value="SVK">SVK</option>
+							<option value="GE">GE</option>
+							<option value="CZ">CZ</option>
 						</select>
 					</p>
-					<p>Ve které vesnici bydlí autor stránky?
+					<p id="p3">Ve které vesnici bydlí autor stránky?
 					<input type="text" name="Rakvice" id="answer3"> </p><br>
 					<p id="quiz-button">
 					<button  onclick="check();">Zkontrolovat</button>
+					<button  onclick="show_answers();">Zobrazit odpovědi</button>
 					</p>
 			</div>
 		
